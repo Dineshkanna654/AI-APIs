@@ -21,11 +21,11 @@ def generate_qa_pairs(csv_file):
             })
             qa_pairs.append({
                 "question": f"Who is the customer for the product {row['product_description']}?",
-                "answer": row['customer_name']
+                "answer": row['customer_name']#
             })
             qa_pairs.append({
                 "question": f"Who is the customer for the product code {row['product_code']}?",
-                "answer": row['customer_name']
+                "answer": row['customer_name']#
             })
             qa_pairs.append({
                 "question": f"What is the product description for this product code {row['product_code']}?",
@@ -33,19 +33,19 @@ def generate_qa_pairs(csv_file):
             })
             qa_pairs.append({
                 "question": f"What is the total value for this product code {row['product_code']}?",
-                "answer": row['total_value']
+                "answer": row['total_value']#
             })
             qa_pairs.append({
                 "question": f"What is the invoice number for this product code {row['product_code']}?",
-                "answer": row['invoice_no']
+                "answer": row['invoice_no']#
             })
             qa_pairs.append({
                 "question": f"What is the invoice date for this product code {row['product_code']}?",
-                "answer": row['invoice_date']
+                "answer": row['invoice_date']#
             })
             qa_pairs.append({
                 "question": f"What is the ordered quantity for this product code {row['product_code']}?",
-                "answer": row['order_qty']
+                "answer": row['order_qty']#
             })
             qa_pairs.append({
                 "question": f"What is the MRP for this product code {row['product_code']}?",
